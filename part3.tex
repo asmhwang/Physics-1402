@@ -514,14 +514,13 @@ V - iR - L\frac{di}{dt} = 0 \implies \frac{di}{dt} + \frac{i}{(L/R)} = \frac{V}{
 $L/R$ has units of time (s). The solution is
 \begin{equation}
 \boxed{i(t) = \frac{V}{R}\left(1 - e^{-t/\tau_L}\right)}
+\end{equation}
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.45\textwidth,keepaspectratio]{figures/inline/u9_charging_curve.png}
   \caption*{$i(t)$ for the charging LR circuit: rises asymptotically to $V/R$ with time constant $\tau_L = L/R$.}
 \end{figure}
-
-\end{equation}
 
 In analogy to the RC circuit. The current rises asymptotically to $V/R$ with time constant $\tau_L = L/R$.
 
@@ -533,14 +532,13 @@ After a long time, the current is $V/R$. Now move $S$ to $b$ (battery disconnect
 \end{equation}
 \begin{equation}
 \boxed{i(t) = \frac{V}{R}e^{-t/\tau_L}, \qquad \tau_L = L/R}
+\end{equation}
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.45\textwidth,keepaspectratio]{figures/inline/u9_discharging_curve.png}
   \caption*{$i(t)$ for the discharging LR circuit: exponential decay from $V/R$ with the same time constant $\tau_L$.}
 \end{figure}
-
-\end{equation}
 
 The current decays exponentially.
 

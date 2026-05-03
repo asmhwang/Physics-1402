@@ -48,6 +48,13 @@ If the circuit is a coil of $N$ turns, then
 
 Consider a bar magnet (with N pole facing left toward a coil) being pushed into a coil connected to an ammeter. Pushing the magnet into the coil changes the flux $\Phi_B$ through the coil, and induces a current $i$. \emph{What is the direction of $i$?}
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.45\textwidth,keepaspectratio]{figures/inline/u9_magnet_coil.png}
+  \caption*{Magnet pushed into a coil; ammeter reads induced current $i$.}
+\end{figure}
+
+
 \subsection*{Lenz's Law}
 
 \textbf{Lenz's Law:} \emph{The induced current will be in the direction that opposes the changing flux in the circuit.}
@@ -55,6 +62,13 @@ Consider a bar magnet (with N pole facing left toward a coil) being pushed into 
 \subsubsection*{Two ways to think about Lenz's Law}
 
 \textbf{1) Magnetic dipole picture:} The induced current produces a magnetic dipole moment that effectively makes the coil look like a magnet. When a N-pole is pushed in from the left, the side of the coil facing the incoming magnet becomes a N-pole as well, so the two N-poles \emph{repel} each other (resisting the motion of the magnet into the loop).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth,keepaspectratio]{figures/inline/u9_lenz_dipole.png}
+  \caption*{Induced current produces a magnetic dipole that repels the incoming N-pole.}
+\end{figure}
+
 
 \textbf{2) Flux cancellation picture:} The induced current produces a B-field inside the loop that points opposite to the magnet's increasing field, thus reducing the change in flux penetrating the loop.
 
@@ -64,6 +78,13 @@ If you pull the magnet away (with N-pole toward the coil moving away), the flux 
 \begin{itemize}
     \item The induced current's magnetic dipole now \emph{attracts} the magnet (S-pole faces the receding N-pole).
     \item The induced B-field \emph{adds to} the flux in the loop (to help it persist).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth,keepaspectratio]{figures/inline/u9_lenz_pull_away.png}
+  \caption*{Pulling the magnet away: induced current reverses; loop's S-pole faces the receding N-pole.}
+\end{figure}
+
 \end{itemize}
 
 In both cases, the induced effect opposes the \emph{change}, not the flux itself.
@@ -71,6 +92,13 @@ In both cases, the induced effect opposes the \emph{change}, not the flux itself
 \section{Quantitative Induction: Loop in a Uniform B-field}
 
 Consider a rectangular wire loop being pulled out of a uniform magnetic field $\vbf{B}$ (pointing into the page) at speed $v$ by an external force $\vbf{F}_h$ (the ``hand'').
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\textwidth,keepaspectratio]{figures/inline/u9_loop_in_B.png}
+  \caption*{Loop being pulled out of a uniform B-field (into page) at speed $v$ by force $\vbf{F}_h$.}
+\end{figure}
+
 
 \textbf{Definitions:}
 \begin{itemize}
@@ -146,6 +174,13 @@ So $P_R = F_h v$ --- we have converted mechanical energy into electrical energy.
 
 \subsection*{Concept Check}
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\textwidth,keepaspectratio]{figures/inline/u9_concept_check_loop.png}
+  \caption*{Concept check: a loop entirely inside a uniform B-field, pulled at constant speed.}
+\end{figure}
+
+
 What current is induced in a loop sitting \emph{entirely inside} a uniform B-field while being pulled by $F_h$?
 
 \textbf{Answer:} $i = 0$, because the flux $\Phi_B$ is not changing (the loop's full area is in the field). So
@@ -163,6 +198,13 @@ We previously saw we got an EMF when a loop moved in a constant B-field --- beca
 \end{equation}
 
 \subsection*{Example: Cylindrical Region of Changing B-field}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth,keepaspectratio]{figures/inline/u9_cylindrical_B.png}
+  \caption*{Cylindrical region of radius $R$ with a uniform $\vbf{B}$-field out of the page; an increasing $B$ induces a circulating $\vbf{E}$-field.}
+\end{figure}
+
 
 Consider a region $r < R$ where $\vbf{B}$ points into the page and $dB/dt > 0$.
 
@@ -227,6 +269,13 @@ The missing piece in Amp\`ere's Law (the displacement current) will come later -
 
 \subsection{Electric Power Generator}
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,keepaspectratio]{figures/inline/u9_generator.png}
+  \caption*{AC generator: a coil of $N$ turns rotates in a uniform B-field; brushes carry the induced EMF to the load $R$.}
+\end{figure}
+
+
 Consider a coil (with $N$ turns, dimensions $a \times b$) rotating at frequency $\nu$ in a uniform magnetic field $\vbf{B}$. The coil is connected via brushes to an external resistor $R$.
 
 The flux is
@@ -253,6 +302,13 @@ As the coil rotates, the current is initially in one direction (e.g., $\mathcal{
 
 \subsection{Eddy Currents}
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\textwidth,keepaspectratio]{figures/inline/u9_eddy_current.png}
+  \caption*{Cu sheet pulled out of a B-field develops a CW eddy current; the $i\vbf{\ell}\times\vbf{B}$ force opposes the motion.}
+\end{figure}
+
+
 Consider a copper sheet being pulled out of a region of B-field (into the page). As the Cu sheet is pulled out, the flux through the Cu sheet decreases.
 \begin{enumerate}
     \item A clockwise (CW) eddy current forms whose magnetic dipole is into the page, to oppose the decrease in $\Phi_B$ (by adding B-field to it).
@@ -262,6 +318,13 @@ Consider a copper sheet being pulled out of a region of B-field (into the page).
 Both are examples of Lenz's Law at work. Eddy currents dissipate energy as heat --- this is the basis of magnetic braking.
 
 \subsection{Electromagnetic Shielding}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth,keepaspectratio]{figures/inline/u9_em_shielding.png}
+  \caption*{A conducting sheet of thickness $s$ shields point $P$ from a time-varying B-field; induced currents cancel the external flux.}
+\end{figure}
+
 
 Consider a conducting sheet of thickness $s$ and conductivity $\sigma$ above which sits a point $P$. There is an external time-varying B-field $\vbf{B}$ pointing upward, with field changing in time.
 \begin{itemize}
@@ -315,7 +378,21 @@ B = \mu_0 n i, \qquad \frac{dB}{dt} = \mu_0 n \frac{di}{dt}
 
 \subsection{Self-Induction}
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\textwidth,keepaspectratio]{figures/inline/u9_self_induction_solenoid.png}
+  \caption*{Solenoid threaded by a wire loop: changing the current in the solenoid induces an EMF in the inner loop.}
+\end{figure}
+
+
 When a current changes in the solenoid, an EMF appears across the solenoid \emph{itself}. This is the \textbf{self-inductance}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth,keepaspectratio]{figures/inline/u9_inductor_symbol.png}
+  \caption*{Solenoid (or coil) idealized as the circuit symbol for an inductor.}
+\end{figure}
+
 \begin{equation}
 \mathcal{E} = -\frac{d}{dt}(N\Phi_B), \qquad N\Phi_B = \text{number of flux linkages}
 \end{equation}
@@ -336,6 +413,13 @@ Or
 For any geometry --- simple coil, solenoid, toroid --- as long as there is a current, there is a B-field and a self-inductance.
 
 \subsection{Analogy to Capacitance}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth,keepaspectratio]{figures/inline/u9_capacitor_inductor_analogy.png}
+  \caption*{Analogy: any geometry of conductors yields a capacitance $C$; any geometry with current and a B-field yields a self-inductance $L$.}
+\end{figure}
+
 
 \begin{center}
 \begin{tabular}{l|l}
@@ -359,6 +443,13 @@ $C = q/V$ & $L = -\mathcal{E}/(di/dt)$ \\
 
 \subsection{Solenoid}
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\textwidth,keepaspectratio]{figures/inline/u9_solenoid_geometry.png}
+  \caption*{Solenoid of length $\ell$, $n$ turns per unit length, cross-sectional area $A$, carrying current $i$.}
+\end{figure}
+
+
 For a solenoid of length $\ell$, $n$ turns per unit length, cross-sectional area $A$:
 \begin{equation}
 B = \mu_0 n i, \qquad N = n\ell, \qquad N\Phi_B = n\ell B A
@@ -373,6 +464,13 @@ N\Phi_B = n\ell A (\mu_0 n i) = \mu_0 n^2 \ell A i
 \end{equation}
 
 \subsection{Toroid}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\textwidth,keepaspectratio]{figures/inline/u9_toroid.png}
+  \caption*{Toroid of inner radius $a$, outer radius $b$, height $h$, $N$ total turns.}
+\end{figure}
+
 
 A toroid with inner radius $a$, outer radius $b$, height $h$, and $N$ total turns. Use Amp\`ere's Law on a circular Amperian path of radius $r$ inside the toroid:
 \begin{equation}
@@ -392,6 +490,13 @@ The flux through one turn (using $dA = h\, dr$):
 
 \section{LR Circuit}
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth,keepaspectratio]{figures/inline/u9_lr_circuit.png}
+  \caption*{LR circuit: battery $V$, switch $S$ between contacts $a$ and $b$, resistor $R$, inductor $L$.}
+\end{figure}
+
+
 This is the analog of the RC circuit we studied. Consider a battery $V$, switch $S$, resistor $R$, and inductor $L$ in series. Switch $S$ can be moved to either contact $a$ (charging) or $b$ (discharging).
 
 \subsection{Charging (Switch to $a$)}
@@ -409,6 +514,13 @@ V - iR - L\frac{di}{dt} = 0 \implies \frac{di}{dt} + \frac{i}{(L/R)} = \frac{V}{
 $L/R$ has units of time (s). The solution is
 \begin{equation}
 \boxed{i(t) = \frac{V}{R}\left(1 - e^{-t/\tau_L}\right)}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.45\textwidth,keepaspectratio]{figures/inline/u9_charging_curve.png}
+  \caption*{$i(t)$ for the charging LR circuit: rises asymptotically to $V/R$ with time constant $\tau_L = L/R$.}
+\end{figure}
+
 \end{equation}
 
 In analogy to the RC circuit. The current rises asymptotically to $V/R$ with time constant $\tau_L = L/R$.
@@ -421,11 +533,25 @@ After a long time, the current is $V/R$. Now move $S$ to $b$ (battery disconnect
 \end{equation}
 \begin{equation}
 \boxed{i(t) = \frac{V}{R}e^{-t/\tau_L}, \qquad \tau_L = L/R}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.45\textwidth,keepaspectratio]{figures/inline/u9_discharging_curve.png}
+  \caption*{$i(t)$ for the discharging LR circuit: exponential decay from $V/R$ with the same time constant $\tau_L$.}
+\end{figure}
+
 \end{equation}
 
 The current decays exponentially.
 
 \subsection{What is going on physically?}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.65\textwidth,keepaspectratio]{figures/inline/u9_charging_circuit.png}
+  \caption*{Charging case: the inductor's induced EMF $V_L$ opposes the increasing current.}
+\end{figure}
+
 
 \textbf{Charging case:} As $i$ increased, the inductor produces an EMF to oppose the change in $i$ and the change in $\Phi_B$ through its coils.
 
@@ -437,6 +563,13 @@ L\frac{di}{dt} = V_L > 0, \qquad V - iR - V_L = 0, \qquad i = \frac{V - V_L}{R}
 But $V_L$ is not constant like a battery --- it depends on $di/dt$. Initially $V_L = V$ (no current can flow yet), and finally $V_L \to 0$ (steady state, current $V/R$).
 
 \textbf{Discharging case:}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\textwidth,keepaspectratio]{figures/inline/u9_discharging_circuit.png}
+  \caption*{Discharging case: with no battery, $-L\,di/dt > 0$ acts to maintain the current as it decays.}
+\end{figure}
+
 \begin{equation}
 -iR - L\frac{di}{dt} = 0, \qquad \text{but } -L\frac{di}{dt} > 0 \implies \frac{di}{dt} < 0
 \end{equation}
@@ -496,6 +629,13 @@ In analogy to the capacitor where $u_E = \frac{1}{2}\varepsilon_0 E^2$.
 
 \section{Coaxial Cable}
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth,keepaspectratio]{figures/inline/u9_coaxial_cable.png}
+  \caption*{Coaxial cable: inner conductor radius $a$ carries current $i$; outer conductor radius $b$ carries return current $i$. The B-field lives in the annulus.}
+\end{figure}
+
+
 Central conductor of radius $a$ carrying current $i$, outer conductor of radius $b$ carrying return current $i$. \emph{What is the energy stored in a cable of length $\ell$, and what is the inductance $L$?}
 
 \subsection*{B-field via Amp\`ere's Law}
@@ -540,7 +680,6 @@ U_B = \frac{1}{2}Li^2 = \frac{\mu_0 i^2 \ell}{4\pi}\ln(b/a)
 
 This is the inductance of a coaxial cable of length $\ell$.
 
-\input{figures/unit_9_pages.tex}
 
 \newpage
 %==============================================================
@@ -769,7 +908,6 @@ We now have all four:
 
 \textbf{This is a complete classical description of electromagnetism.} Together with the Lorentz force law $\vbf{F} = q\vbf{E} + q\vbf{v}\times\vbf{B}$, these equations describe all classical E\&M phenomena --- including the existence and propagation of electromagnetic waves at speed $c = 1/\sqrt{\mu_0\varepsilon_0}$.
 
-\input{figures/unit_10_pages.tex}
 
 \newpage
 %==============================================================
@@ -1129,7 +1267,6 @@ Huygens provided a simple way to understand wave propagation. \emph{Every point 
 
 Huygens' construction underlies the explanations of reflection, refraction, and diffraction in subsequent units. While visual and geometric, this construction accurately describes the 3-D wave solution of the traveling wave equation. It will be useful when we study diffraction and interference.
 
-\input{figures/unit_11_pages.tex}
 
 \newpage
 %==============================================================
@@ -1431,7 +1568,6 @@ Light parallel to the optic axis diverges on a trajectory that, traced backward,
 
 The diverging lens always produces a \textbf{virtual, erect} image (for a real object).
 
-\input{figures/unit_12_pages.tex}
 
 \newpage
 %==============================================================
@@ -1839,7 +1975,6 @@ d = \frac{\lambda}{4n} = \frac{5500\,\text{\AA}}{4 \times 1.38} = 1000\,\text{\A
 \end{equation}
 A 1000 \AA{} MgF$_2$ coating will do the trick.
 
-\input{figures/unit_13_pages.tex}
 
 \newpage
 %==============================================================
@@ -2220,6 +2355,5 @@ But the electrons approach the screen \emph{individually}. The probability that 
 
 We do, however, have a \textbf{quantum determinism} in that the Schr\"odinger equation determines $\psi(x,t)$ for all times, just like $F = ma$ determines particle motion for all time.
 
-\input{figures/unit_14_pages.tex}
 
 \end{document}
